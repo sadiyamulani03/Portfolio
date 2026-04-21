@@ -3,7 +3,7 @@
 My personal portfolio website built with HTML, CSS & JavaScript.
 Features a cyberpunk/neon dark theme with smooth animations.
 
-🌐 Live at: https://sadiyaportfolio.vercel.app/
+🌐 Live at: https://sadiyamulani03.github.io/Portfolio/
 
 ## Sections
 - About Me
