@@ -127,7 +127,7 @@
   .skill-tag.pink { border-color: rgba(255,0,110,0.3); color: rgba(255,0,110,0.9); background: rgba(255,0,110,0.05); }
   .skill-tag.pink:hover { background: rgba(255,0,110,0.12); }
 
-/* --- Project--- */
+/* --- Project --- */
 .project-card {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(0, 255, 255, 0.15);
@@ -159,7 +159,7 @@
 
 .project-card:hover::before { opacity: 1; }
 
-/* Hackathon card — subtle gold accent */
+/* Hackathon card — gold accent */
 .project-card--hackathon {
   border-color: rgba(255, 200, 0, 0.2);
 }
@@ -183,7 +183,19 @@
   background: linear-gradient(90deg, #7b2fff, #ff00ff, #00ffff);
 }
 
-/* --- Project Header (icon + tags row) --- */
+/* Web3 card — green/teal accent */
+.project-card--web3 {
+  border-color: rgba(0, 255, 150, 0.2);
+}
+.project-card--web3:hover {
+  border-color: rgba(0, 255, 150, 0.5);
+  box-shadow: 0 8px 30px rgba(0, 255, 150, 0.1);
+}
+.project-card--web3::before {
+  background: linear-gradient(90deg, #00ff96, #00ffff, #7b2fff);
+}
+
+/* --- Header row --- */
 .project-header {
   display: flex;
   align-items: center;
@@ -213,13 +225,21 @@
   text-transform: uppercase;
 }
 
-.tag-python    { background: rgba(55, 118, 171, 0.2); color: #5fa8d3; border: 1px solid rgba(95, 168, 211, 0.35); }
-.tag-blockchain{ background: rgba(0, 255, 255, 0.1);  color: #00ffff; border: 1px solid rgba(0, 255, 255, 0.3); }
-.tag-security  { background: rgba(255, 60, 60, 0.1);  color: #ff6b6b; border: 1px solid rgba(255, 107, 107, 0.3);}
-.tag-ai        { background: rgba(123, 47, 255, 0.15); color: #b57bff; border: 1px solid rgba(181, 123, 255, 0.3);}
-.tag-hackathon { background: rgba(255, 200, 0, 0.1);  color: #ffc800; border: 1px solid rgba(255, 200, 0, 0.3); }
-.tag-aptos     { background: rgba(0, 255, 150, 0.1);  color: #00ff96; border: 1px solid rgba(0, 255, 150, 0.3); }
-.tag-research  { background: rgba(255, 0, 255, 0.1);  color: #ff80ff; border: 1px solid rgba(255, 0, 255, 0.3); }
+.tag-python     { background: rgba(55, 118, 171, 0.2);  color: #5fa8d3; border: 1px solid rgba(95, 168, 211, 0.35); }
+.tag-blockchain { background: rgba(0, 255, 255, 0.1);   color: #00ffff; border: 1px solid rgba(0, 255, 255, 0.3);  }
+.tag-security   { background: rgba(255, 60, 60, 0.1);   color: #ff6b6b; border: 1px solid rgba(255, 107, 107, 0.3);}
+.tag-ai         { background: rgba(123, 47, 255, 0.15); color: #b57bff; border: 1px solid rgba(181, 123, 255, 0.3);}
+.tag-hackathon  { background: rgba(255, 200, 0, 0.1);   color: #ffc800; border: 1px solid rgba(255, 200, 0, 0.3);  }
+.tag-aptos      { background: rgba(0, 255, 150, 0.1);   color: #00ff96; border: 1px solid rgba(0, 255, 150, 0.3);  }
+.tag-research   { background: rgba(255, 0, 255, 0.1);   color: #ff80ff; border: 1px solid rgba(255, 0, 255, 0.3);  }
+.tag-html       { background: rgba(228, 77, 38, 0.15);  color: #e96a3b; border: 1px solid rgba(228, 77, 38, 0.3);  }
+.tag-css        { background: rgba(38, 77, 228, 0.15);  color: #6b8fe8; border: 1px solid rgba(38, 77, 228, 0.3);  }
+.tag-js         { background: rgba(240, 219, 79, 0.15); color: #f0db4f; border: 1px solid rgba(240, 219, 79, 0.3); }
+.tag-mysql      { background: rgba(0, 117, 143, 0.15);  color: #00a3c4; border: 1px solid rgba(0, 163, 196, 0.3);  }
+.tag-data       { background: rgba(80, 200, 120, 0.15); color: #50c878; border: 1px solid rgba(80, 200, 120, 0.3); }
+.tag-networking { background: rgba(255, 140, 0, 0.15);  color: #ffaa33; border: 1px solid rgba(255, 140, 0, 0.3);  }
+.tag-solidity   { background: rgba(100, 100, 220, 0.15);color: #9090e8; border: 1px solid rgba(100, 100, 220, 0.3);}
+.tag-ethereum   { background: rgba(98, 126, 234, 0.15); color: #8fa3f5; border: 1px solid rgba(98, 126, 234, 0.3); }
 
 /* --- Title & Description --- */
 .project-title {
@@ -238,7 +258,7 @@
 }
 
 .project-desc code {
-  background: rgba(0,255,255,0.08);
+  background: rgba(0, 255, 255, 0.08);
   color: #00ffff;
   padding: 0.1em 0.4em;
   border-radius: 4px;
@@ -247,7 +267,7 @@
 
 .project-desc strong { color: #fff; }
 
-/* --- Footer (button + badge) --- */
+/* --- Footer --- */
 .project-footer {
   display: flex;
   align-items: center;
@@ -268,7 +288,7 @@
   padding: 0.35rem 0.85rem;
   border-radius: 6px;
   text-decoration: none;
-  transition: background 0.2s ease, box-shadow 0.2s ease;
+  transition: background 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
 }
 
 .btn-project:hover {
@@ -281,16 +301,43 @@
   color: #b57bff;
   border-color: rgba(181, 123, 255, 0.4);
 }
-
 .btn-project--research:hover {
   background: rgba(123, 47, 255, 0.1);
   box-shadow: 0 0 12px rgba(123, 47, 255, 0.2);
+  color: #fff;
+}
+
+.btn-project--web3 {
+  color: #00ff96;
+  border-color: rgba(0, 255, 150, 0.4);
+}
+.btn-project--web3:hover {
+  background: rgba(0, 255, 150, 0.1);
+  box-shadow: 0 0 12px rgba(0, 255, 150, 0.2);
+  color: #fff;
 }
 
 .project-type {
   font-size: 0.72rem;
   color: rgba(200, 200, 220, 0.45);
   font-style: italic;
+}
+
+/* --- Responsive Grid (if you don't already have one) --- */
+/* Only add this if your projects don't already have a grid wrapper */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+@media (max-width: 640px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  .project-card { padding: 1.2rem; }
+  .project-icon { font-size: 1.5rem; }
 }
 
   /* ACHIEVEMENTS */
