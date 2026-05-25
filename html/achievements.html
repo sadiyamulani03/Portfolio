@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sadiya Mulani | Achievements</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/Portfolio.css">
+    <link rel="stylesheet" href="css/pages.css" />
+    <link rel="stylesheet" href="css/ultra.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="js/Portfolio.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/cursor-ultra.js" defer></script>
+    <script src="js/3d-pages.js" defer></script>
+  </head>
+  <body>
+    <div class="page-transition" aria-hidden="true"></div>
+    <canvas id="canvas-bg"></canvas>
+    <div class="grid-bg"></div>
+    <div id="cursor"></div>
+    <div id="cursor-ring"></div>
+
+    <nav>
+      <a href="html/Portfolio.html" class="nav-logo" aria-label="Home">S<span>.</span>M</a>
+
+      <ul class="nav-links" aria-label="Primary">
+        <li><a href="html/about.html">About</a></li>
+        <li><a href="html/skills.html">Skills</a></li>
+        <li><a href="html/projects.html">Projects</a></li>
+        <li><a href="html/achievements.html">Achievements</a></li>
+        <li><a href="html/education.html">Education</a></li>
+        <li><a href="html/contact.html">Contact</a></li>
+      </ul>
+
+      <button class="nav-toggle" type="button" aria-label="Open menu" data-nav-open>
+        <span class="nav-toggle-lines" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+      </button>
+    </nav>
+
+    <div class="nav-drawer-backdrop" aria-hidden="true" data-nav-close></div>
+    <aside class="nav-drawer" aria-label="Menu">
+      <div class="nav-drawer-header">
+        <div class="nav-drawer-title">// Navigation</div>
+        <button class="nav-drawer-close" type="button" aria-label="Close menu" data-nav-close>×</button>
+      </div>
+      <ul class="nav-drawer-links">
+        <li><a href="html/about.html">About <span>→</span></a></li>
+        <li><a href="html/skills.html">Skills <span>→</span></a></li>
+        <li><a href="html/projects.html">Projects <span>→</span></a></li>
+        <li><a href="html/achievements.html">Achievements <span>→</span></a></li>
+        <li><a href="html/education.html">Education <span>→</span></a></li>
+        <li><a href="html/contact.html">Contact <span>→</span></a></li>
+      </ul>
+    </aside>
+
+    <main>
+      <section id="achievements">
+        <div class="section-wrapper">
+          <div class="section-label">// 004</div>
+          <h2 class="section-title reveal">Achievements & Hackathons</h2>
+
+          <div class="achievements-grid">
+            <div class="achievement-card reveal">
+              <div class="ach-type">⚡ Hackathon <span class="ach-badge">CERTIFICATE</span></div>
+              <div class="ach-title">TrustChainAI — Nexux Tantra 2K26</div>
+              <div class="ach-org">Department of Technology · SPPU, Pune</div>
+              <p class="ach-desc">
+                Participated in the Hackathon category at NEXUX TANTRA 2K26, building
+                <strong style="color:var(--neon-cyan)">TrustChainAI</strong> — a blockchain-powered AI trust verification system.
+                Got the opportunity to pitch our work live to a panel of judges at SPPU.
+              </p>
+              <div class="ach-tags">
+                <span class="ach-tag">Blockchain</span><span class="ach-tag">AI</span><span class="ach-tag">Live Pitching</span
+                ><span class="ach-tag">Web3</span>
+              </div>
+              <div class="ach-date">📅 <span>17 February 2026</span> · Credential ID: DOT-SPPU-RGMBTGND</div>
+            </div>
+
+            <div class="achievement-card reveal">
+              <div class="ach-type">⚡ Hackathon <span class="ach-badge">PARTICIPATED</span></div>
+              <div class="ach-title">Blockchain Lottery System — Aptos Hackathon</div>
+              <div class="ach-org">Aptos Ecosystem · SPPU, Pune</div>
+              <p class="ach-desc">
+                Collaborated in building a decentralized
+                <strong style="color:var(--neon-cyan)">Lottery System on the Aptos blockchain</strong> — exploring Move language
+                smart contracts, transparent on-chain randomness, and trustless fund management in a live hackathon environment.
+              </p>
+              <div class="ach-tags">
+                <span class="ach-tag">Aptos</span><span class="ach-tag">Move Language</span><span class="ach-tag">Smart Contracts</span
+                ><span class="ach-tag">DeFi</span>
+              </div>
+              <div class="ach-date">📅 <span>2025</span> · SPPU Campus Hackathon</div>
+            </div>
+
+            <div class="achievement-card research reveal">
+              <div class="ach-type" style="color: var(--neon-green)">
+                📄 Research Paper
+                <span
+                  class="ach-badge"
+                  style="background: rgba(0, 255, 136, 0.08); border-color: rgba(0, 255, 136, 0.3); color: var(--neon-green)"
+                  >IN PROGRESS</span
+                >
+              </div>
+              <div class="ach-title">
+                A Layered Decentralized Architecture for Enhancing National Digital Infrastructure Resilience in Emerging Economies
+              </div>
+              <div class="ach-org">Department of Technology, SPPU</div>
+              <p class="ach-desc">
+                Authoring a research paper on a hybrid decentralized architecture designed to improve national digital
+                infrastructure resilience. The system introduces layered components including peer-to-peer communication,
+                decentralized identity verification, distributed transaction validation, and governance coordination to ensure
+                service continuity during network failures, cyber-attacks, and infrastructure disruptions.
+              </p>
+              <div class="ach-tags">
+                <span class="ach-tag" style="border-color: rgba(0, 255, 136, 0.3); color: var(--neon-green); background: rgba(0, 255, 136, 0.05)"
+                  >Distributed Systems</span
+                >
+                <span class="ach-tag" style="border-color: rgba(0, 255, 136, 0.3); color: var(--neon-green); background: rgba(0, 255, 136, 0.05)"
+                  >Blockchain Concepts</span
+                >
+                <span class="ach-tag" style="border-color: rgba(0, 255, 136, 0.3); color: var(--neon-green); background: rgba(0, 255, 136, 0.05)"
+                  >Network Resilience</span
+                >
+                <span class="ach-tag" style="border-color: rgba(0, 255, 136, 0.3); color: var(--neon-green); background: rgba(0, 255, 136, 0.05)"
+                  >Digital Infrastructure</span
+                >
+              </div>
+              <div class="ach-wip"><span class="pulse-dot"></span> Currently writing · Not yet published</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Designed & Built by <span>Sadiya Shakir Mulani</span> · <span>2026</span></p>
+    </footer>
+  </body>
+</html>
+

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sadiya Mulani | Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/Portfolio.css">
+    <link rel="stylesheet" href="css/pages.css" />
+    <link rel="stylesheet" href="css/ultra.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="js/Portfolio.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/cursor-ultra.js" defer></script>
+    <script src="js/3d-pages.js" defer></script>
+  </head>
+  <body>
+    <div class="page-transition" aria-hidden="true"></div>
+    <canvas id="canvas-bg"></canvas>
+    <div class="grid-bg"></div>
+    <div id="cursor"></div>
+    <div id="cursor-ring"></div>
+
+    <nav>
+      <a href="html/Portfolio.html" class="nav-logo" aria-label="Home">S<span>.</span>M</a>
+
+      <ul class="nav-links" aria-label="Primary">
+        <li><a href="html/about.html">About</a></li>
+        <li><a href="html/skills.html">Skills</a></li>
+        <li><a href="html/projects.html">Projects</a></li>
+        <li><a href="html/achievements.html">Achievements</a></li>
+        <li><a href="html/education.html">Education</a></li>
+        <li><a href="html/contact.html">Contact</a></li>
+      </ul>
+
+      <button class="nav-toggle" type="button" aria-label="Open menu" data-nav-open>
+        <span class="nav-toggle-lines" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+      </button>
+    </nav>
+
+    <div class="nav-drawer-backdrop" aria-hidden="true" data-nav-close></div>
+    <aside class="nav-drawer" aria-label="Menu">
+      <div class="nav-drawer-header">
+        <div class="nav-drawer-title">// Navigation</div>
+        <button class="nav-drawer-close" type="button" aria-label="Close menu" data-nav-close>Ã—</button>
+      </div>
+      <ul class="nav-drawer-links">
+        <li><a href="html/about.html">About <span>→</span></a></li>
+        <li><a href="html/skills.html">Skills <span>→</span></a></li>
+        <li><a href="html/projects.html">Projects <span>→</span></a></li>
+        <li><a href="html/achievements.html">Achievements <span>→</span></a></li>
+        <li><a href="html/education.html">Education <span>→</span></a></li>
+        <li><a href="html/contact.html">Contact <span>→</span></a></li>
+      </ul>
+    </aside>
+
+    <main>
+      <section id="projects">
+        <div class="section-wrapper">
+          <div class="section-label">// 003</div>
+          <h2 class="section-title reveal">Projects</h2>
+
+          <div class="projects-grid">
+            <!-- Card 1 -->
+            <div class="project-card reveal">
+              <div class="project-card-inner">
+                <div class="project-card-front">
+                  <div class="project-header">
+                    <div class="project-icon">ðŸš—</div>
+                    <div class="project-tags">
+                      <span class="tag tag-html">HTML</span>
+                      <span class="tag tag-css">CSS</span>
+                      <span class="tag tag-js">JavaScript</span>
+                    </div>
+                  </div>
+                  <h3 class="project-title">CarMeet â€” Car Enthusiast Platform</h3>
+                  <p style="color:var(--text-dim);font-size:.8rem;margin-top:.5rem;font-family:'Share Tech Mono',monospace">// Hover to flip</p>
+                </div>
+                <div class="project-card-back">
+                  <p class="project-desc">A static front-end website for car enthusiasts to discover events, explore car models, and connect with the community. Built for Web Technology course with responsive layout, event listings, and car showcase sections.</p>
+                  <div class="project-footer">
+                    <a href="https://github.com/sadiyamulani03/CarMeet-website" target="_blank" class="btn-project" rel="noreferrer">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                      GitHub
+                    </a>
+                    <span class="project-type">ðŸ–¥ Web Technology</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="project-card reveal">
+              <div class="project-card-inner">
+                <div class="project-card-front">
+                  <div class="project-header"><div class="project-icon">ðŸ´</div><div class="project-tags"><span class="tag tag-html">HTML</span><span class="tag tag-css">CSS</span></div></div>
+                  <h3 class="project-title">Hotel Five Flavours of India</h3>
+                  <p style="color:var(--text-dim);font-size:.8rem;margin-top:.5rem;font-family:'Share Tech Mono',monospace">// Hover to flip</p>
+                </div>
+                <div class="project-card-back">
+                  <p class="project-desc">A static restaurant website showcasing authentic regional cuisines from Maharashtra, Punjab, Rajasthan, Kerala &amp; West Bengal. Multi-category menu with CSS Grid â€” no frameworks.</p>
+                  <div class="project-footer">
+                    <a href="https://github.com/sadiyamulani03/Hotel-Five-Flavours-of-India" target="_blank" class="btn-project" rel="noreferrer"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>GitHub</a>
+                    <span class="project-type">ðŸ–¥ Frontend</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="project-card reveal">
+              <div class="project-card-inner">
+                <div class="project-card-front">
+                  <div class="project-header"><div class="project-icon">ðŸ“Š</div><div class="project-tags"><span class="tag tag-python">Python</span><span class="tag tag-mysql">MySQL</span><span class="tag tag-data">Data Analytics</span></div></div>
+                  <h3 class="project-title">Learning Productivity Intelligence Tool</h3>
+                  <p style="color:var(--text-dim);font-size:.8rem;margin-top:.5rem;font-family:'Share Tech Mono',monospace">// Hover to flip</p>
+                </div>
+                <div class="project-card-back">
+                  <p class="project-desc">Desktop app to track student learning productivity. Study tracking, fatigue detection, goal management, Matplotlib dashboards, CSV reports, bcrypt login â€” backed by MySQL.</p>
+                  <div class="project-footer">
+                    <a href="https://github.com/sadiyamulani03/Learning-Productivity-Tool" target="_blank" class="btn-project" rel="noreferrer"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>GitHub</a>
+                    <span class="project-type">ðŸ›  Desktop App</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="project-card reveal">
+              <div class="project-card-inner">
+                <div class="project-card-front">
+                  <div class="project-header"><div class="project-icon">ðŸŒ</div><div class="project-tags"><span class="tag tag-python">Python</span><span class="tag tag-networking">Networking</span><span class="tag tag-security">Sockets</span></div></div>
+                  <h3 class="project-title">LayerLink â€” TCP vs UDP OSI Simulation</h3>
+                  <p style="color:var(--text-dim);font-size:.8rem;margin-top:.5rem;font-family:'Share Tech Mono',monospace">// Hover to flip</p>
+                </div>
+                <div class="project-card-back">
+                  <p class="project-desc">Python socket project simulating OSI layer communication, visually comparing TCP vs UDP data transmission across network layers with real packet exchange.</p>
+                  <div class="project-footer">
+                    <a href="https://github.com/sadiyamulani03/LayerLink-TCP-vs-UDP-Simulation" target="_blank" class="btn-project" rel="noreferrer"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>GitHub</a>
+                    <span class="project-type">ðŸ–§ Networks Lab</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="project-card reveal">
+              <div class="project-card-inner">
+                <div class="project-card-front">
+                  <div class="project-header"><div class="project-icon">ðŸ§ </div><div class="project-tags"><span class="tag tag-python">Python</span><span class="tag tag-data">Data Analysis</span><span class="tag tag-mysql">Matplotlib</span></div></div>
+                  <h3 class="project-title">Psychology Data Analysis Project</h3>
+                  <p style="color:var(--text-dim);font-size:.8rem;margin-top:.5rem;font-family:'Share Tech Mono',monospace">// Hover to flip</p>
+                </div>
+                <div class="project-card-back">
+                  <p class="project-desc">Analyzes student performance data to uncover behavioral patterns affecting academics. Bar, pie, scatter, heatmap charts to visualize correlations between study habits, stress, and grades.</p>
+                  <div class="project-footer">
+                    <a href="https://github.com/sadiyamulani03/Psychology-Data-Analysis-Project" target="_blank" class="btn-project" rel="noreferrer"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>GitHub</a>
+                    <span class="project-type">ðŸ“ˆ Data Science</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="project-card project-card--web3 reveal">
+              <div class="project-card-inner">
+                <div class="project-card-front">
+                  <div class="project-header"><div class="project-icon">ðŸ’Ž</div><div class="project-tags"><span class="tag tag-solidity">Solidity</span><span class="tag tag-blockchain">Web3</span><span class="tag tag-ethereum">Ethereum</span></div></div>
+                  <h3 class="project-title">Crowdfunding Smart Contract</h3>
+                  <p style="color:var(--text-dim);font-size:.8rem;margin-top:.5rem;font-family:'Share Tech Mono',monospace">// Hover to flip</p>
+                </div>
+                <div class="project-card-back">
+                  <p class="project-desc">First Web3 project â€” decentralized crowdfunding in Solidity via Remix IDE. Campaign creation, ETH contributions, goal-based fund release, and refunds if target isn't met.</p>
+                  <div class="project-footer">
+                    <a href="https://github.com/sadiyamulani03/Crowdfunding-Smart-Contract" target="_blank" class="btn-project btn-project--web3" rel="noreferrer"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>GitHub</a>
+                    <span class="project-type">â›“ Smart Contract</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="project-card project-card--web3 reveal">
+              <div class="project-card-inner">
+                <div class="project-card-front">
+                  <div class="project-header"><div class="project-icon">ðŸª™</div><div class="project-tags"><span class="tag tag-solidity">Solidity</span><span class="tag tag-blockchain">Polygon</span><span class="tag tag-ethereum">ERC-20</span></div></div>
+                  <h3 class="project-title">ERC-20 Token on Polygon Amoy Testnet</h3>
+                  <p style="color:var(--text-dim);font-size:.8rem;margin-top:.5rem;font-family:'Share Tech Mono',monospace">// Hover to flip</p>
+                </div>
+                <div class="project-card-back">
+                  <p class="project-desc">Custom ERC-20 token on Polygon Amoy testnet using Solidity, OpenZeppelin, Remix IDE and MetaMask. Covers token minting, transfer logic, and allowance mechanisms.</p>
+                  <div class="project-footer">
+                    <a href="https://github.com/sadiyamulani03/erc20-polygon-amoy" target="_blank" class="btn-project btn-project--web3" rel="noreferrer"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>GitHub</a>
+                    <span class="project-type">â›“ Token Deployment</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="project-card reveal">
+              <div class="project-card-inner">
+                <div class="project-card-front">
+                  <div class="project-header"><div class="project-icon">ðŸ”</div><div class="project-tags"><span class="tag tag-python">Python</span><span class="tag tag-blockchain">Blockchain</span><span class="tag tag-security">Encryption</span></div></div>
+                  <h3 class="project-title">ChainSecureX â€” Encrypted Chat</h3>
+                  <p style="color:var(--text-dim);font-size:.8rem;margin-top:.5rem;font-family:'Share Tech Mono',monospace">// Hover to flip</p>
+                </div>
+                <div class="project-card-back">
+                  <p class="project-desc">End-to-end encrypted chat with blockchain-based message verification. Python sockets, RSA + AES encryption, customtkinter desktop UI. Messages hashed and verified on-chain.</p>
+                  <div class="project-footer">
+                    <a href="https://github.com/sadiyamulani03/ChainSecureX" target="_blank" class="btn-project" rel="noreferrer"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>GitHub</a>
+                    <span class="project-type">ðŸ›¡ Security</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Designed &amp; Built by <span>Sadiya Shakir Mulani</span> Â· <span>2026</span></p>
+    </footer>
+  </body>
+</html>

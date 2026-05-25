@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sadiya Mulani | Skills</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/Portfolio.css">
+    <link rel="stylesheet" href="css/pages.css" />
+    <link rel="stylesheet" href="css/ultra.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="js/Portfolio.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/cursor-ultra.js" defer></script>
+    <script src="js/3d-pages.js" defer></script>
+  </head>
+  <body>
+    <div class="page-transition" aria-hidden="true"></div>
+    <canvas id="canvas-bg"></canvas>
+    <div class="grid-bg"></div>
+    <div id="cursor"></div>
+    <div id="cursor-ring"></div>
+
+    <nav>
+      <a href="html/Portfolio.html" class="nav-logo" aria-label="Home">S<span>.</span>M</a>
+
+      <ul class="nav-links" aria-label="Primary">
+        <li><a href="html/about.html">About</a></li>
+        <li><a href="html/skills.html">Skills</a></li>
+        <li><a href="html/projects.html">Projects</a></li>
+        <li><a href="html/achievements.html">Achievements</a></li>
+        <li><a href="html/education.html">Education</a></li>
+        <li><a href="html/contact.html">Contact</a></li>
+      </ul>
+
+      <button class="nav-toggle" type="button" aria-label="Open menu" data-nav-open>
+        <span class="nav-toggle-lines" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+      </button>
+    </nav>
+
+    <div class="nav-drawer-backdrop" aria-hidden="true" data-nav-close></div>
+    <aside class="nav-drawer" aria-label="Menu">
+      <div class="nav-drawer-header">
+        <div class="nav-drawer-title">// Navigation</div>
+        <button class="nav-drawer-close" type="button" aria-label="Close menu" data-nav-close>×</button>
+      </div>
+      <ul class="nav-drawer-links">
+        <li><a href="html/about.html">About <span>→</span></a></li>
+        <li><a href="html/skills.html">Skills <span>→</span></a></li>
+        <li><a href="html/projects.html">Projects <span>→</span></a></li>
+        <li><a href="html/achievements.html">Achievements <span>→</span></a></li>
+        <li><a href="html/education.html">Education <span>→</span></a></li>
+        <li><a href="html/contact.html">Contact <span>→</span></a></li>
+      </ul>
+    </aside>
+
+    <main>
+      <section id="skills">
+        <div class="section-wrapper">
+          <div class="section-label">// 002</div>
+          <h2 class="section-title reveal">Skills & Tech Stack</h2>
+          <div class="skills-grid">
+            <div class="skill-category reveal">
+              <div class="skill-cat-title"><span>⛓</span> Blockchain & Web3</div>
+              <div class="skill-tags">
+                <span class="skill-tag">Solidity</span>
+                <span class="skill-tag">Smart Contracts</span>
+                <span class="skill-tag">ERC-20 Tokens</span>
+                <span class="skill-tag">Polygon Amoy</span>
+                <span class="skill-tag">Remix IDE</span>
+                <span class="skill-tag">MetaMask</span>
+                <span class="skill-tag">OpenZeppelin</span>
+                <span class="skill-tag">Blockchain Architecture</span>
+              </div>
+            </div>
+
+            <div class="skill-category reveal">
+              <div class="skill-cat-title"><span>🐍</span> Programming & Data</div>
+              <div class="skill-tags">
+                <span class="skill-tag green">Python</span>
+                <span class="skill-tag green">Data Science</span>
+                <span class="skill-tag green">Data Analysis</span>
+                <span class="skill-tag green">Power BI</span>
+                <span class="skill-tag green">MySQL</span>
+                <span class="skill-tag green">RDBMS</span>
+                <span class="skill-tag green">Data Visualization</span>
+              </div>
+            </div>
+
+            <div class="skill-category reveal">
+              <div class="skill-cat-title"><span>🌐</span> Web & Networking</div>
+              <div class="skill-tags">
+                <span class="skill-tag pink">HTML</span>
+                <span class="skill-tag pink">CSS</span>
+                <span class="skill-tag pink">Web Development</span>
+                <span class="skill-tag pink">Computer Networking</span>
+                <span class="skill-tag pink">TCP/UDP</span>
+                <span class="skill-tag pink">OSI Model</span>
+                <span class="skill-tag pink">Socket Programming</span>
+              </div>
+            </div>
+
+            <div class="skill-category reveal">
+              <div class="skill-cat-title"><span>🔐</span> Security & Soft Skills</div>
+              <div class="skill-tags">
+                <span class="skill-tag">Cryptography</span>
+                <span class="skill-tag">Encryption Protocols</span>
+                <span class="skill-tag green">Communication</span>
+                <span class="skill-tag green">Creativity</span>
+                <span class="skill-tag pink">Problem Solving</span>
+                <span class="skill-tag pink">Research</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Designed & Built by <span>Sadiya Shakir Mulani</span> · <span>2026</span></p>
+    </footer>
+  </body>
+</html>
+
