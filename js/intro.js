@@ -1,6 +1,7 @@
 /* intro.js — INSANE Blockchain Intro Sequence */
 (function(){
-  if(!location.pathname.toLowerCase().match(/(portfolio|index|\/\s*$)/)) return;
+  var p = location.pathname.toLowerCase();
+  if(!(p.match(/index\.html/) || p.match(/portfolio/) || p === '/' || p.endsWith('/'))) return;
 
   function waitThree(cb){ if(window.THREE){cb();return;} var t=setInterval(function(){if(window.THREE){clearInterval(t);cb();}},30); }
 
